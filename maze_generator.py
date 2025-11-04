@@ -333,16 +333,19 @@ class MazeGenerator:
         np.save(filename, self.grid)
         print(f"Maze saved to {filename}")
     
-    def save_maze_to_txt(self, filename: str, goal: Tuple[int, int] = None):
+    def save_maze_to_txt(self, filename: str, start: Tuple[int, int] = None, goal: Tuple[int, int] = None):
         """
         Save the maze to a text file.
-        Uses '1' for walls, '0' for paths, and '4' for goal.
+        Uses '1' for walls, '0' for paths, '3' for start, and '4' for goal.
         Numbers are space-separated.
         
         Args:
             filename: Output filename
+            start: Start position in grid coordinates (if None, will be top-left)
             goal: Goal position in grid coordinates (if None, will be random)
         """
+        if start is None:
+            start = self.get_start_position()
         if goal is None:
             goal = self.get_random_goal_position()
         
@@ -350,8 +353,11 @@ class MazeGenerator:
             for row_idx, row in enumerate(self.grid):
                 row_values = []
                 for col_idx, cell in enumerate(row):
+                    # Check if this is the start position
+                    if (row_idx, col_idx) == start:
+                        row_values.append('3')
                     # Check if this is the goal position
-                    if (row_idx, col_idx) == goal:
+                    elif (row_idx, col_idx) == goal:
                         row_values.append('4')
                     else:
                         # 1 for wall, 0 for path
@@ -361,7 +367,8 @@ class MazeGenerator:
                 f.write(' '.join(row_values) + '\n')
         
         print(f"Maze saved to text file: {filename}")
-        print(f"  Format: 1=wall, 0=path, 4=goal")
+        print(f"  Format: 1=wall, 0=path, 3=start, 4=goal")
+        print(f"  Start position: {start}")
         print(f"  Goal position: {goal}")
     
     def visualize_and_save_png(self, filename: str = "maze_output.png", start: Tuple[int, int] = None, goal: Tuple[int, int] = None):
@@ -578,8 +585,8 @@ def main():
     # Save as numpy array
     generator.save_maze("maze_output.npy")
     
-    # Save as text file (with goal marked as 4)
-    generator.save_maze_to_txt("maze.txt", goal)
+    # Save as text file (with start marked as 3 and goal marked as 4)
+    generator.save_maze_to_txt("maze.txt", start, goal)
     
     # Save as PNG visualization
     generator.visualize_and_save_png("maze_output.png", start, goal)
@@ -589,9 +596,10 @@ def main():
     print("="*50)
     print("\nGenerated files:")
     print("  - maze_output.npy  (NumPy array format)")
-    print("  - maze.txt         (Text format: 1=wall, 0=path, 4=goal)")
+    print("  - maze.txt         (Text format: 1=wall, 0=path, 3=start, 4=goal)")
     print("  - maze_output.png  (PNG visualization)")
-    print("\nStart = White square, Goal = Red square (marked as 4 in txt)")
+    print("\nStart = White square (marked as 3 in txt)")
+    print("Goal = Red square (marked as 4 in txt)")
     
 
 if __name__ == "__main__":
