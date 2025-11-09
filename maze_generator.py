@@ -546,8 +546,8 @@ def main():
     # ============================================
     # CONFIGURATION - Edit these values!
     # ============================================
-    width = 10   # Number of cells horizontally
-    height = 10  # Number of cells vertically
+    width = 5   # Number of cells horizontally
+    height = 5  # Number of cells vertically
     # ============================================
     
     # Use current time as seed for random generation
