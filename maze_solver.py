@@ -10,7 +10,7 @@ import math
 from collections import deque
 
 # ============================================================
-# CONFIGURATION - OPTIMIZED FOR YOUR MAZE 
+# CONFIGURATION 
 # ============================================================
 
 REWARDS = {
@@ -30,9 +30,9 @@ CONFIG = {
     'batch_size': 64,
     'memory_size': 20000,
     'target_update': 10,
-    'visualize': True,  # Toggle visualization
-    'display_delay': 0.0,  # Delay between frames (0 = no delay)
-    'early_stopping': True,
+    'visualize': True,
+    'display_delay': 0.0,  # Delay between frames (0 = no delay, more longer)
+    'early_stopping': False,
     'early_stopping_patience': 150,
     'early_stopping_threshold': 1.0,
     'early_stopping_success_threshold': 70.0,
@@ -112,7 +112,7 @@ class MazeEnv:
         self.path = []
         self.visited = set()
 
-        self.state_size = 8  # pos(2) + goal(2) + distance(2) + walls_nearby(2)
+        self.state_size = 8
         self.action_size = 4
 
         self.distance_reward_scale = distance_reward_scale
@@ -216,7 +216,7 @@ class MazeEnv:
 
 
 class PygameVisualizer:
-    """Real-time Pygame visualization with zoom and dynamic sizing."""
+    """Real-time visualization"""
     def __init__(self, maze, start, goal):
         pygame.init()
         
@@ -224,15 +224,13 @@ class PygameVisualizer:
         self.start = start
         self.goal = goal
         
-        # Dynamic cell size based on maze dimensions
-        # Max screen size: 1200x800 for maze, 250 for metrics
         max_maze_width = 1200
         max_maze_height = 800
         
         cell_size_by_width = max_maze_width // maze.shape[1]
         cell_size_by_height = max_maze_height // maze.shape[0]
-        self.base_cell_size = min(cell_size_by_width, cell_size_by_height, 50)  # Cap at 50px
-        self.base_cell_size = max(self.base_cell_size, 10)  # Min 10px
+        self.base_cell_size = min(cell_size_by_width, cell_size_by_height, 50)
+        self.base_cell_size = max(self.base_cell_size, 10)
         
         # Zoom controls
         self.zoom_level = 1.0
@@ -247,8 +245,8 @@ class PygameVisualizer:
         self.last_mouse_pos = (0, 0)
         
         self.metrics_width = 300
-        self.screen_width = 1450  # Fixed screen width
-        self.screen_height = 800  # Fixed screen height
+        self.screen_width = 1450 
+        self.screen_height = 800
         
         self.screen = pygame.display.set_mode((self.screen_width, self.screen_height))
         pygame.display.set_caption("DQN Maze Solver Training - Scroll to Zoom, Drag to Pan")
@@ -267,7 +265,7 @@ class PygameVisualizer:
         self.DARK_GREEN = (0, 100, 0)
         self.GRAY = (128, 128, 128)
         self.YELLOW = (255, 255, 0)
-        self.WALL_COLOR = (0, 255, 0)  # green for walls
+        self.WALL_COLOR = (0, 255, 0)
         
         # Create surface for maze rendering
         self.maze_surface = pygame.Surface((self.screen_width - self.metrics_width, self.screen_height))

@@ -17,40 +17,39 @@ Action size: 4
 Max steps per episode: 1800
 Visualization: ON
 ================================================================================
-
-[Episodes 1-10] Reward: -662.78 | Success:  50.0% | Steps: 1340.9 | Length:  30.3 | ε:  0.791 | Time/Ep:  3.45s | Duration:  34.45s
-[Episodes 11-20] Reward: -787.02 | Success:  30.0% | Steps: 1606.6 | Length:  27.5 | ε:  0.771 | Time/Ep:  4.26s | Duration:  42.56s
-[Episodes 21-30] Reward: -738.54 | Success:  30.0% | Steps: 1509.5 | Length:  28.5 | ε:  0.752 | Time/Ep:  4.27s | Duration:  42.70s
-[Episodes 31-40] Reward: -323.79 | Success:  90.0% | Steps:  828.8 | Length:  31.6 | ε:  0.732 | Time/Ep:  2.21s | Duration:  22.05s
-[Episodes 41-50] Reward:  -83.65 | Success: 100.0% | Steps:  383.0 | Length:  32.5 | ε:  0.712 | Time/Ep:  1.02s | Duration:  10.22s
-[Episodes 51-60] Reward:    1.27 | Success: 100.0% | Steps:  215.4 | Length:  28.1 | ε:  0.692 | Time/Ep:  0.57s | Duration:   5.74s
-[Episodes 61-70] Reward:   58.72 | Success: 100.0% | Steps:   99.6 | Length:  23.8 | ε:  0.673 | Time/Ep:  0.27s | Duration:   2.72s
-[Episodes 71-80] Reward:   64.96 | Success: 100.0% | Steps:   88.7 | Length:  23.6 | ε:  0.653 | Time/Ep:  0.23s | Duration:   2.34s
-[Episodes 81-90] Reward:   68.94 | Success: 100.0% | Steps:   79.8 | Length:  24.0 | ε:  0.633 | Time/Ep:  0.21s | Duration:   2.10s
-[Episodes 91-100] Reward:   70.49 | Success: 100.0% | Steps:   70.5 | Length:  23.3 | ε:  0.613 | Time/Ep:  0.19s | Duration:   1.90s
-[Episodes 101-110] Reward:   44.70 | Success: 100.0% | Steps:  136.3 | Length:  25.0 | ε:  0.594 | Time/Ep:  0.38s | Duration:   3.76s
-[Episodes 111-120] Reward:  -67.66 | Success:  90.0% | Steps:  264.2 | Length:  23.7 | ε:  0.574 | Time/Ep:  0.71s | Duration:   7.13s
-[Episodes 121-130] Reward:  -16.95 | Success:  90.0% | Steps:  245.2 | Length:  24.0 | ε:  0.554 | Time/Ep:  0.65s | Duration:   6.53s
-[Episodes 131-140] Reward:   82.21 | Success: 100.0% | Steps:   55.4 | Length:  23.1 | ε:  0.534 | Time/Ep:  0.15s | Duration:   1.51s
-[Episodes 141-150] Reward:   56.77 | Success: 100.0% | Steps:   95.1 | Length:  23.3 | ε:  0.515 | Time/Ep:  0.26s | Duration:   2.55s
-[Episodes 151-160] Reward:   85.44 | Success: 100.0% | Steps:   44.8 | Length:  21.4 | ε:  0.495 | Time/Ep:  0.12s | Duration:   1.21s
-[Episodes 161-170] Reward:   84.00 | Success: 100.0% | Steps:   46.6 | Length:  21.8 | ε:  0.475 | Time/Ep:  0.13s | Duration:   1.30s
-[Episodes 171-180] Reward:   29.83 | Success: 100.0% | Steps:  118.6 | Length:  22.5 | ε:  0.455 | Time/Ep:  0.32s | Duration:   3.23s
-[Episodes 181-190] Reward:   84.12 | Success: 100.0% | Steps:   46.5 | Length:  22.0 | ε:  0.436 | Time/Ep:  0.13s | Duration:   1.25s
-[Episodes 191-200] Reward:    3.54 | Success:  90.0% | Steps:  218.3 | Length:  20.7 | ε:  0.416 | Time/Ep:  0.60s | Duration:   5.98s
-[Episodes 201-210] Reward:   82.78 | Success: 100.0% | Steps:   53.9 | Length:  21.8 | ε:  0.396 | Time/Ep:  0.15s | Duration:   1.46s
-[Episodes 211-220] Reward:   85.53 | Success: 100.0% | Steps:   54.0 | Length:  21.5 | ε:  0.376 | Time/Ep:  0.15s | Duration:   1.46s
-[Episodes 221-230] Reward:   82.70 | Success: 100.0% | Steps:   53.3 | Length:  21.4 | ε:  0.357 | Time/Ep:  0.15s | Duration:   1.47s
-[Episodes 231-240] Reward:   88.63 | Success: 100.0% | Steps:   41.6 | Length:  21.3 | ε:  0.337 | Time/Ep:  0.12s | Duration:   1.15s
-[Episodes 241-250] Reward:   88.91 | Success: 100.0% | Steps:   42.2 | Length:  20.5 | ε:  0.317 | Time/Ep:  0.12s | Duration:   1.15s
-[Episodes 251-260] Reward:   81.13 | Success: 100.0% | Steps:   73.8 | Length:  21.9 | ε:  0.297 | Time/Ep:  0.20s | Duration:   2.02s
-[Episodes 261-270] Reward:   89.06 | Success: 100.0% | Steps:   47.1 | Length:  21.4 | ε:  0.278 | Time/Ep:  0.13s | Duration:   1.29s
-[Episodes 271-280] Reward:   84.67 | Success: 100.0% | Steps:   60.4 | Length:  20.9 | ε:  0.258 | Time/Ep:  0.17s | Duration:   1.69s
-[Episodes 281-290] Reward:   85.98 | Success: 100.0% | Steps:   52.8 | Length:  20.4 | ε:  0.238 | Time/Ep:  0.15s | Duration:   1.46s
-[Episodes 291-300] Reward:   85.11 | Success: 100.0% | Steps:   60.1 | Length:  20.7 | ε:  0.218 | Time/Ep:  0.16s | Duration:   1.63s
-[Episodes 301-310] Reward:   73.70 | Success: 100.0% | Steps:  107.1 | Length:  21.4 | ε:  0.199 | Time/Ep:  0.29s | Duration:   2.94s
-[Episodes 311-320] Reward:   90.83 | Success: 100.0% | Steps:   43.1 | Length:  21.5 | ε:  0.179 | Time/Ep:  0.12s | Duration:   1.21s
-[Episodes 321-330] Reward:   75.36 | Success: 100.0% | Steps:  110.7 | Length:  22.8 | ε:  0.159 | Time/Ep:  0.30s | Duration:   3.04s
+Ep 10 | Reward: -662.78 | Success:  50.0% | Steps: 1340.9 | Length:  30.3 | ε:  0.791 | Time/Ep:  3.45s | Duration:  34.45s
+Ep 20 | Reward: -787.02 | Success:  30.0% | Steps: 1606.6 | Length:  27.5 | ε:  0.771 | Time/Ep:  4.26s | Duration:  42.56s
+Ep 30 | Reward: -738.54 | Success:  30.0% | Steps: 1509.5 | Length:  28.5 | ε:  0.752 | Time/Ep:  4.27s | Duration:  42.70s
+Ep 40 | Reward: -323.79 | Success:  90.0% | Steps:  828.8 | Length:  31.6 | ε:  0.732 | Time/Ep:  2.21s | Duration:  22.05s
+Ep 50 | Reward:  -83.65 | Success: 100.0% | Steps:  383.0 | Length:  32.5 | ε:  0.712 | Time/Ep:  1.02s | Duration:  10.22s
+Ep 60 | Reward:    1.27 | Success: 100.0% | Steps:  215.4 | Length:  28.1 | ε:  0.692 | Time/Ep:  0.57s | Duration:   5.74s
+Ep 70 | Reward:   58.72 | Success: 100.0% | Steps:   99.6 | Length:  23.8 | ε:  0.673 | Time/Ep:  0.27s | Duration:   2.72s
+Ep 80 | Reward:   64.96 | Success: 100.0% | Steps:   88.7 | Length:  23.6 | ε:  0.653 | Time/Ep:  0.23s | Duration:   2.34s
+Ep 90 | Reward:   68.94 | Success: 100.0% | Steps:   79.8 | Length:  24.0 | ε:  0.633 | Time/Ep:  0.21s | Duration:   2.10s
+Ep 100 | Reward:   70.49 | Success: 100.0% | Steps:   70.5 | Length:  23.3 | ε:  0.613 | Time/Ep:  0.19s | Duration:   1.90s
+Ep 110 | Reward:   44.70 | Success: 100.0% | Steps:  136.3 | Length:  25.0 | ε:  0.594 | Time/Ep:  0.38s | Duration:   3.76s
+Ep 120 | Reward:  -67.66 | Success:  90.0% | Steps:  264.2 | Length:  23.7 | ε:  0.574 | Time/Ep:  0.71s | Duration:   7.13s
+Ep 130 | Reward:  -16.95 | Success:  90.0% | Steps:  245.2 | Length:  24.0 | ε:  0.554 | Time/Ep:  0.65s | Duration:   6.53s
+Ep 140 | Reward:   82.21 | Success: 100.0% | Steps:   55.4 | Length:  23.1 | ε:  0.534 | Time/Ep:  0.15s | Duration:   1.51s
+Ep 150 | Reward:   56.77 | Success: 100.0% | Steps:   95.1 | Length:  23.3 | ε:  0.515 | Time/Ep:  0.26s | Duration:   2.55s
+Ep 160 | Reward:   85.44 | Success: 100.0% | Steps:   44.8 | Length:  21.4 | ε:  0.495 | Time/Ep:  0.12s | Duration:   1.21s
+Ep 170 | Reward:   84.00 | Success: 100.0% | Steps:   46.6 | Length:  21.8 | ε:  0.475 | Time/Ep:  0.13s | Duration:   1.30s
+Ep 180 | Reward:   29.83 | Success: 100.0% | Steps:  118.6 | Length:  22.5 | ε:  0.455 | Time/Ep:  0.32s | Duration:   3.23s
+Ep 190 | Reward:   84.12 | Success: 100.0% | Steps:   46.5 | Length:  22.0 | ε:  0.436 | Time/Ep:  0.13s | Duration:   1.25s
+Ep 200 | Reward:    3.54 | Success:  90.0% | Steps:  218.3 | Length:  20.7 | ε:  0.416 | Time/Ep:  0.60s | Duration:   5.98s
+Ep 210 | Reward:   82.78 | Success: 100.0% | Steps:   53.9 | Length:  21.8 | ε:  0.396 | Time/Ep:  0.15s | Duration:   1.46s
+Ep 220 | Reward:   85.53 | Success: 100.0% | Steps:   54.0 | Length:  21.5 | ε:  0.376 | Time/Ep:  0.15s | Duration:   1.46s
+Ep 230 | Reward:   82.70 | Success: 100.0% | Steps:   53.3 | Length:  21.4 | ε:  0.357 | Time/Ep:  0.15s | Duration:   1.47s
+Ep 240 | Reward:   88.63 | Success: 100.0% | Steps:   41.6 | Length:  21.3 | ε:  0.337 | Time/Ep:  0.12s | Duration:   1.15s
+Ep 250 | Reward:   88.91 | Success: 100.0% | Steps:   42.2 | Length:  20.5 | ε:  0.317 | Time/Ep:  0.12s | Duration:   1.15s
+Ep 260 | Reward:   81.13 | Success: 100.0% | Steps:   73.8 | Length:  21.9 | ε:  0.297 | Time/Ep:  0.20s | Duration:   2.02s
+Ep 270 | Reward:   89.06 | Success: 100.0% | Steps:   47.1 | Length:  21.4 | ε:  0.278 | Time/Ep:  0.13s | Duration:   1.29s
+Ep 280 | Reward:   84.67 | Success: 100.0% | Steps:   60.4 | Length:  20.9 | ε:  0.258 | Time/Ep:  0.17s | Duration:   1.69s
+Ep 290 | Reward:   85.98 | Success: 100.0% | Steps:   52.8 | Length:  20.4 | ε:  0.238 | Time/Ep:  0.15s | Duration:   1.46s
+Ep 300 | Reward:   85.11 | Success: 100.0% | Steps:   60.1 | Length:  20.7 | ε:  0.218 | Time/Ep:  0.16s | Duration:   1.63s
+Ep 310 | Reward:   73.70 | Success: 100.0% | Steps:  107.1 | Length:  21.4 | ε:  0.199 | Time/Ep:  0.29s | Duration:   2.94s
+Ep 320 | Reward:   90.83 | Success: 100.0% | Steps:   43.1 | Length:  21.5 | ε:  0.179 | Time/Ep:  0.12s | Duration:   1.21s
+Ep 330 | Reward:   75.36 | Success: 100.0% | Steps:  110.7 | Length:  22.8 | ε:  0.159 | Time/Ep:  0.30s | Duration:   3.04s
 
 ================================================================================
 EARLY STOPPING - Plateau detected: ΔSuccess 0.67% < 1.0% with recent success 99.3%
